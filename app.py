@@ -29,6 +29,10 @@ def index():
     return render_template('index.html')
 
 
-if __name__ == '__main__':
-    app.run(debug=True)
-    app.config['DEBUG'] = True
+#if __name__ == '__main__':
+    #app.run(debug=True)
+    #app.config['DEBUG'] = True
+   
+@app.route('/test', methods=['POST'])
+def test():
+    return 'Hello World!'
