@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Result</title>
+  </head>
+  <body>
+    <h1>Result</h1>
+    {% if is_fake %}
+    <p>The image is likely fake.</p>
+    {% else %}
+    <p>The image is likely real.</p>
+    {% endif %}
+    <a href="/">Upload another image</a>
+  </body>
+</html>
